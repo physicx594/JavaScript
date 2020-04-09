@@ -23,7 +23,7 @@ function updateList(data){
     str = '';
     let len = data.length
     for(i=0; i<len; i++){
-        str += '<li class=" d-flex justify-content-between"><span>' + data[i].content+ '</span> <a href="#" style="color:red;text-decoration:none" data-num=' + i + '>X </a> </li>'
+        str += `<li class="d-flex justify-content-between"><span>${data[i].content} </span> <a href="#" style="color:red;text-decoration:none" data-num= ${i} >X </a> </li>`
     }
     list.innerHTML = str
 } 
