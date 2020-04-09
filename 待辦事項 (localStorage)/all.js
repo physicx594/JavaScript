@@ -36,3 +36,5 @@ function listDelete(e){
     localStorage.setItem('listData', JSON.stringify(data));
     updateList(data)
 }
+
+// document.querySelector('.body').style.hight = window.innerHeight + "px"

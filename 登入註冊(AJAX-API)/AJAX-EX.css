@@ -30,8 +30,6 @@ footer, header, hgroup, menu, nav, section {
 }
 body {
 	line-height: 1;
-	background: url(photo-1518627675569-e9d4fb90cdb5.jfif)  no-repeat ;
-	background-size: cover ;
 	
 }
 ol, ul {
@@ -52,29 +50,11 @@ table {
 
 /* 間隔 */
 
-.bg{
-	width: 600px;
-	background-color:white;
-	margin: 100px auto;
-	/* border: 3px solid black; */
-	padding: 1em;
-	box-shadow: rgb(122,111,131) 0px 0px 5px 3px;
-}
-figure{
-	width: 200px;
-	height: 200px;
-	border-radius: 50%;
-	box-shadow: rgb(123, 120, 120) 0px 0px 5px 3px;
-	overflow: hidden;
-}
-img{
-	width: 100%;
-}
-a{
-	color: red;
-}
-
-a:hover{
-	text-decoration: none;
-
+form{
+    background-color: white;
+    border-radius: 6px;
+    width: 300px;
+    margin: 200px auto;
+    padding: 20px;
+    box-shadow: black 0px 0px 3px 1px;
 }
