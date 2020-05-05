@@ -54,7 +54,6 @@ table {
     background-color: #F0F0F0;
     display: flex;
     flex-wrap: wrap;
-    padding: 40px 85px;
 
 }
 
@@ -132,4 +131,15 @@ p{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+}
+.footer{
+    width: 1280px;
+    height: 34px;
+    background-color: #2EB738;
+    margin-top: 72px;
+}
+.footer p{
+    color: white;
+    text-align: right;
+    line-height: 34px;
 }

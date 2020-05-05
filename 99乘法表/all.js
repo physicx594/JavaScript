@@ -18,6 +18,10 @@ window.onload = () => {
             <span>X</span>
         </div>
     </div>`
+  const footer = `      
+    <div class="footer">
+      <p>Copyright © 2019 HexSchool. All rights reserved.</p>
+      </div>`
   let box = ''
   // let rightNum = ''
   // let leftNum = ''
@@ -42,5 +46,5 @@ window.onload = () => {
         </div>
     </div>`
   }
-  wrapper.innerHTML = title + box
+  wrapper.innerHTML = title + box + footer
 }
