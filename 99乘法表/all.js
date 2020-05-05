@@ -1,6 +1,8 @@
 const wrapper = document.querySelector('.wrapper')
 
 window.onload = () => {
+
+  //title
   const title = `
     <div class="title">
         <div class="topLine">
@@ -18,33 +20,37 @@ window.onload = () => {
             <span>X</span>
         </div>
     </div>`
+
+  //footer 
   const footer = `      
     <div class="footer">
       <p>Copyright © 2019 HexSchool. All rights reserved.</p>
       </div>`
+
+  //for迴圈
   let box = ''
   // let rightNum = ''
   // let leftNum = ''
   for (let i = 2; i < 10; i++) {
-    let rightNum = ''
-    let leftNum = ''
-    for (let j = 2; j < 10; j++) {
-      if (j < 5) {
-        leftNum += `<p>${i} x ${j} = ${i * j}</p>`
-      } else {
-        rightNum += `<p>${i} x ${j} = ${i * j}</p>`
+      let rightNum = ''
+      let leftNum = ''
+      for (let j = 2; j < 10; j++) {
+        if (j < 5) {
+          leftNum += `<p>${i} x ${j} = ${i * j}</p>`
+        } else {
+          rightNum += `<p>${i} x ${j} = ${i * j}</p>`
+        }
       }
+      box += `
+      <div class="box">
+          <div class="left">
+              <h1 class="num">${i}</h1>
+              ${leftNum}
+          </div>
+          <div class="right">
+              ${rightNum}
+          </div>
+      </div>`
     }
-    box += `
-    <div class="box">
-        <div class="left">
-            <h1 class="num">${i}</h1>
-            ${leftNum}
-        </div>
-        <div class="right">
-            ${rightNum}
-        </div>
-    </div>`
+    wrapper.innerHTML = title + box + footer
   }
-  wrapper.innerHTML = title + box + footer
-}
